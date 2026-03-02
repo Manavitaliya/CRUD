@@ -37,4 +37,4 @@ class StudentForm(forms.ModelForm):
             raise forms.ValidationError("Mobile number must be exactly 10 digits.")
         if not mobile_digits.isdigit():
             raise forms.ValidationError("Mobile number must contain only digits.")
-        return mobile_digits   #---
+        return mobile_digits   #-----
